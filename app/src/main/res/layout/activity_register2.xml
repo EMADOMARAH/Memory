@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.signup_2.RegisterActivity2"
+    >
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="شارفت على الانتهاء"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.5"
+        android:layout_marginTop="@dimen/_125sdp"
+        app:layout_constraintDimensionRatio="H,8:1"
+        />
+
+    <include
+        android:id="@+id/included"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        layout="@layout/password_layout"
+        android:layout_marginTop="@dimen/_30sdp"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="انشاء الحساب"
+        android:backgroundTint="#1479CA"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintDimensionRatio="H,4.5:1"
+        app:layout_constraintEnd_toEndOf="@+id/included"
+        app:layout_constraintStart_toStartOf="@+id/included"
+        app:layout_constraintTop_toBottomOf="@+id/included"
+        />
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="H,2:1"
+        app:layout_constraintEnd_toEndOf="@+id/button"
+        app:layout_constraintStart_toStartOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintWidth_percent="0.5"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
